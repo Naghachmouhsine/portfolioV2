@@ -16,10 +16,10 @@ export const PROJETS: Projet[] =[
         "num": 7,
         "github": "",
         "photos": [
-            "/PedagoConnect/admin.png",
-            "/PedagoConnect/home.jpeg",
-            "/PedagoConnect/newDemande.jpeg",
-            "/PedagoConnect/mesDemandes.jpeg"
+            "PedagoConnect/admin.png",
+            "PedagoConnect/home.jpeg",
+            "PedagoConnect/newDemande.jpeg",
+            "PedagoConnect/mesDemandes.jpeg"
         ],
         "id": "PEDAGO001"
     },
@@ -34,12 +34,12 @@ export const PROJETS: Projet[] =[
             "num": 6,
             "github": "",
             "photos": [
-                            "/sourcing/home.png",
-              "/sourcing/login.png",
-              "/sourcing/REGISTRE.png",
+                            "sourcing/home.png",
+              "sourcing/login.png",
+              "sourcing/REGISTRE.png",
                             "/sourcing/dashboard.png",
-              "/sourcing/createSourcing.png",
-              "/sourcing/soourcing.png"
+              "sourcing/createSourcing.png",
+              "sourcing/soourcing.png"
             ],
             "id": "ECOM001"
         },
@@ -54,8 +54,8 @@ export const PROJETS: Projet[] =[
         ],
         "num": 2,
         "photos": [
-            "/emotions/detection.png",
-            "/emotions/dashboard.png"
+            "emotions/detection.png",
+            "emotions/dashboard.png"
         ],
         "github": "https://github.com/Naghachmouhsine/DetecionEmotionsEtudiantsBackEnd",
         "id": "XP3P0gep5fFKNWYRCvy1"
@@ -73,17 +73,17 @@ export const PROJETS: Projet[] =[
         "num": 4,
         "github": "https://github.com/Naghachmouhsine/Gestion-des-ressources-materielles",
         "photos": [
-            "/Gestion materiels/besoin.png",
-            "/Gestion materiels/ressource.png"
+            "Gestion materiels/besoin.png",
+            "Gestion materiels/ressource.png"
         ],
         "id": "WBzQCzYO6hKyeoak47Zc"
     },
     {
         "github": "https://github.com/Naghachmouhsine/clubappfrontEnd",
         "photos": [
-            "/appCLub/Clup FCC.png",
-            "/appCLub/Clup FCC (1).png",
-            "/appCLub/Home.png"
+            "appCLub/Clup FCC.png",
+            "appCLub/Clup FCC (1).png",
+            "appCLub/Home.png"
         ],
         "num": 1,
         "technos": [
@@ -105,10 +105,10 @@ export const PROJETS: Projet[] =[
         "num": 5,
         "github": "https://github.com/Naghachmouhsine/visit_morroc_frontEnd",
         "photos": [
-            "/site/p1.png",
-            "/site/p3.png",
-            "/site/p4.png",
-            "/site/p5.png",
+            "site/p1.png",
+            "site/p3.png",
+            "site/p4.png",
+            "site/p5.png",
         ],
         "id": "SYcDTsgECUZzWbLLwloQ"
     }];
