@@ -1,0 +1,47 @@
+<section id="home" class="home-container">
+  <div class="hero-text">
+    <h3 class="hero-title">{{ profile.titre }}</h3>
+
+    <p class="hero-description">
+      {{ profile.description }}
+    </p>
+
+    <div class="cta-group">
+      <button class="btn-primary" routerLink="/portfolio/projets">
+        Voir mes projets
+      </button>
+
+      <button class="btn-primary" (click)="viewPdf()">
+        CV <i class="fas fa-download"></i>
+      </button>
+    </div>
+
+    <!-- CONTACT INFOS -->
+    <div class="contact-infos">
+
+      <div class="grp">
+        <a href="tel:{{ profile.phone }}" class="contact-item">
+          <i class="fas fa-phone"></i> {{ profile.phone }}
+        </a>
+
+        <a href="mailto:{{ profile.email }}" class="contact-item">
+          <i class="fas fa-envelope"></i> {{ profile.email }}
+        </a>
+      </div>
+
+      <a href="{{ profile.linkedin }}" class="contact-item" target="_blank">
+        <i class="fab fa-linkedin"></i> {{ profile.linkedin }}
+      </a>
+
+      <a href="{{ profile.github }}" class="contact-item" target="_blank">
+        <i class="fab fa-github"></i> {{ profile.github }}
+      </a>
+
+
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="image.png" alt="Profile Picture" />
+  </div>
+</section>

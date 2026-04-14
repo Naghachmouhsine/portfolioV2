@@ -1,0 +1,15 @@
+<section id="skills" class="skills">
+  <h2 class="section-title">Compétences</h2>
+
+  <div class="skills-container">
+    <div class="skill-category" *ngFor="let skill of skills | async">
+      <h3>{{ skill.category }}</h3>
+
+      <div class="skill-list">
+        <span class="skill-badge" *ngFor="let tech of skill.technos">
+          {{ tech }}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

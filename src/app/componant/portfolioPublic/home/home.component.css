@@ -1,0 +1,135 @@
+/* ---------- HOME CONTAINER ---------- */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10%;
+  gap: 40px;
+  color: white;
+}
+
+/* ---------- TEXT AREA ---------- */
+.hero-title {
+  font-size: 3.3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0066ff, #8a2be2);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 25px;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #d5d7e1;
+  line-height: 1.6;
+  text-align: justify;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+/* ---------- BUTTONS ---------- */
+.cta-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #0066ff, #8a2be2);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.28s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 255, 0.25);
+}
+
+/* ---------- IMAGE ---------- */
+.hero-img img {
+  width: 340px;
+  border-radius: 50%;
+  padding: 6px;
+  background: radial-gradient(circle, #0066ff, #8a2be2);
+  box-shadow: 0 20px 40px rgba(138, 43, 226, 0.3);
+  animation: floatImg 6s ease-in-out infinite;
+}
+
+@keyframes floatImg {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-img img {
+    width: 250px;
+  }
+}
+
+
+/* ---------- CONTACT INFOS ---------- */
+.contact-infos {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.grp{
+  display: flex;
+  gap: 15px;
+}
+
+.contact-item {
+  color: #d5d7e1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.25s;
+  font-weight: 500;
+}
+
+.contact-item i {
+  font-size: 1.2rem;
+  color: #8a2be2;
+  transition: 0.25s;
+}
+
+.contact-item:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.contact-item:hover i {
+  color: #0066ff;
+}
+
+/* RESPONSIVE CONTACT */
+@media (max-width: 768px) {
+  .contact-infos {
+    text-align: center;
+    align-items: center;
+  }
+}

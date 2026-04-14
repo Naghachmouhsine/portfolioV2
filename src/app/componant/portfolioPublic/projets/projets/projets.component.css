@@ -1,0 +1,26 @@
+/* SECTION PROJECTS */
+.projects {
+  width: var(--width);
+  margin: auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #0066ff, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s;
+}
+
+/* GRID MODERNE */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+

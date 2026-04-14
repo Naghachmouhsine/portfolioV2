@@ -1,0 +1,6 @@
+<section id="projects" class="projects">
+  <h2 class="section-title">Mes Projets</h2>
+  <div class="projects-container">
+      <app-projet *ngFor="let projet of projets | async" [projet]="projet"></app-projet>
+  </div>
+</section>

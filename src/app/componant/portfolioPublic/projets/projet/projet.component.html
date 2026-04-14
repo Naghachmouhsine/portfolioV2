@@ -1,0 +1,42 @@
+<div class="project-card">
+  <!-- Slider -->
+  <div class="project-slider" *ngIf="projet.photos.length > 0">
+      <div class="project-slider-inner">
+        <img [src]="projet.photos[currentImage]"
+             [alt]="projet.titre + ' - image ' + (currentImage + 1)"
+             class="slide-image"
+             loading="lazy">
+      </div>
+
+      <button class="prev" (click)="prevImage()" aria-label="Image précédente">&#10094;</button>
+      <button class="next" (click)="nextImage()" aria-label="Image suivante">&#10095;</button>
+
+      <div class="thumbnails" *ngIf="projet.photos.length > 1">
+        <img *ngFor="let p of projet.photos; let i = index"
+             [src]="p"
+             [alt]="projet.titre + ' vignette ' + (i + 1)"
+             [class.active-thumb]="i === currentImage"
+             (click)="setImage(i)"
+             loading="lazy">
+      </div>
+<!--
+      <div class="dots" *ngIf="projet.photos.length > 1">
+        <button *ngFor="let p of projet.photos; let i = index"
+                (click)="setImage(i)"
+                [class.active]="i === currentImage"
+                [attr.aria-label]="'Afficher image ' + (i + 1)"></button>
+      </div> -->
+  </div>
+
+  <div class="project-content">
+      <h3>{{ projet.titre }}</h3>
+
+      <div class="project-tech">
+        <span *ngFor="let tech of projet.technos">{{ tech }}</span>
+      </div>
+
+      <a [href]="projet.github" target="_blank" class="github-btn">
+        <i class="fab fa-github"></i> Voir sur GitHub
+      </a>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<header>
+  <nav class="nav-container">
+    <a routerLink="/portfolio/home" class="logo">Naghach Mouhsine</a>
+
+    <div class="nav-links" [class.active]="menuOpen">
+      <a routerLink="/portfolio/home"
+         routerLinkActive="active-link"
+         (click)="closeMenu()">Home</a>
+
+      <a routerLink="/portfolio/projets"
+         routerLinkActive="active-link"
+         (click)="closeMenu()">Projets</a>
+
+      <a routerLink="/portfolio/skills"
+         routerLinkActive="active-link"
+         (click)="closeMenu()">Compétences</a>
+    </div>
+
+    <button class="menu" (click)="toggleMenu()" [class.active]="menuOpen" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
